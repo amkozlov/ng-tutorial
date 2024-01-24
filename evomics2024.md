@@ -46,7 +46,8 @@ Alignment can be successfully read by RAxML-NG.
 
 ## Exercise 1 : Tree search
 
-**1.** Infer ML tree with default parameters for `prim.phy`.
+**1.** Infer ML tree with default parameters for `prim.phy`.<br>
+NOTE: use `--prefix S1`, we will use the results of this run in the following exercises.
 
 **2.** Check log-likelihoods for all 20 resulting trees (HINT: use `grep`).
 
