@@ -6,7 +6,8 @@
 
 **1.** Check input data:
 ```
-cd /home/phylogenomics/workshop_materials/ng-tutorial; git clone https://github.com/amkozlov/ng-tutorial .
+cd /home/phylogenomics/workshop_materials/; git clone https://github.com/amkozlov/ng-tutorial
+cd ng-tutorial
 ls
 ```
 you should see roughly the following:
@@ -168,12 +169,12 @@ raxml-ng-adaptive --adaptive --msa prim.phy --model prim2.part --prefix P1A
 
 **0.** Check ParGenes options 
 ```
-python ~/software/ParGenes/pargenes/pargenes.py  --help
+python ~/software/.source/ParGenes/pargenes/pargenes.py  --help
 ```
 **1.** Analyze all alignments in the  `~/software/.source/ParGenes/examples/data/small/fasta_files/` folder using default ParGenes settings
 
 ```
-python ~/software/ParGenes/pargenes/pargenes.py  -a ~/software/.source/ParGenes/examples/data/small/fasta_files/  -o parout -c 4 -m --scheduler fork
+python ~/software/.source/ParGenes/pargenes/pargenes.py  -a ~/software/.source/ParGenes/examples/data/small/fasta_files/  -o parout -c 4 -m --scheduler fork
 ```
 
 **2.\***. Run model testing and tree inference from 1 parsimony + 5 random starting trees for the `prot21.fa` alignment.
@@ -181,7 +182,7 @@ python ~/software/ParGenes/pargenes/pargenes.py  -a ~/software/.source/ParGenes/
 ```
 echo "prot21.fa" > msa_filter.txt
 
-python ~/software/.sourceParGenes/pargenes/pargenes.py  -a ~/workshop_materials/ng-tutorial/ --msa-filter msa_filter.txt -o parout2 -c 4 -m --scheduler fork -d aa -s 5 -p 1
+python ~/software/.source/ParGenes/pargenes/pargenes.py  -a ~/workshop_materials/ng-tutorial/ --msa-filter msa_filter.txt -o parout2 -c 4 -m --scheduler fork -d aa -s 5 -p 1
 ```
 
 **3.** Examine the results from both runs
