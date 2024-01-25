@@ -98,7 +98,7 @@ NOTE: use fixed random seed (e.g.,`--seed 1`) to ensure deterministic and compar
 
 **1.** Check online help 
 ```
-modeltest-ng --help
+modeltest-ng-static --help
 ```
 Important options are:
 - `-i ALIGNMENT`
