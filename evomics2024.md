@@ -125,7 +125,7 @@ this dataset
 
 ## Exercise 8: Automatic and manual parallelization
 
-**1.** Run a tree search on the binary alignment from Exercise 7 with automatic parallelization to establish a baseline (NOTE: use `-seed 1`!).<br>
+**1.** Run a tree search with 10 random starting trees (`--tree rand{10}`) on the binary alignment from Exercise 7 with automatic parallelization to establish a baseline (NOTE: use `-seed 1`!).<br>
 If tree search runs too fast (<10 seconds), increase the number of starting trees or use `--all` mode.
 
 **2.** Re-run the same tree search with different number of `--threads` and `--workers`. Can you find a configuration which beats the default heuristic in terms of runtime?<br>
